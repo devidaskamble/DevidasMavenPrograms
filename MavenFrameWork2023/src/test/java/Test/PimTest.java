@@ -30,6 +30,8 @@ public class PimTest extends CommenTest {
 		public void TestGit1() {
 			Assert.assertEquals(false, false);
 		}
-		
+		@Test(priority = 7, groups = { "smoke", "regression" })
+		public void TestGitchanges123() {
+			Assert.assertEquals(false, true);
 	}
-
+}
